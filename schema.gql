@@ -1,0 +1,158 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  _id: String!
+
+  """User firstName """
+  firstName: String!
+
+  """User lastName """
+  lastName: String!
+
+  """User email """
+  email: String!
+
+  """country code of the user"""
+  countryCode: String!
+
+  """phone of the user"""
+  phone: String!
+
+  """identity number of the user"""
+  identityNumber: String!
+
+  """address number of the user"""
+  address: String!
+
+  """country of the user"""
+  country: String!
+
+  """line 2 of the user"""
+  line2: String!
+
+  """city of the user"""
+  city: String!
+
+  """province of the user"""
+  province: String!
+
+  """postal code of the user"""
+  postalCode: String!
+
+  """linkedin of the user"""
+  linkedin: String!
+
+  """facebook of the user"""
+  facebook: String!
+
+  """twitter of the user"""
+  twitter: String!
+}
+
+type Query {
+  users: [User!]!
+  user(_id: String!): User!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  removeUser(_id: String!): User!
+}
+
+input CreateUserInput {
+  """first name of the user"""
+  firstName: String!
+
+  """last name of the user"""
+  lastName: String!
+
+  """email of the user"""
+  email: String!
+
+  """country code of the user"""
+  countryCode: String!
+
+  """phone of the user"""
+  phone: String!
+
+  """identity number of the user"""
+  identityNumber: String!
+
+  """address number of the user"""
+  address: String!
+
+  """country of the user"""
+  country: String!
+
+  """line 2 of the user"""
+  line2: String!
+
+  """city of the user"""
+  city: String!
+
+  """province of the user"""
+  province: String!
+
+  """postal code of the user"""
+  postalCode: String!
+
+  """linkedin of the user"""
+  linkedin: String!
+
+  """facebook of the user"""
+  facebook: String!
+
+  """twitter of the user"""
+  twitter: String!
+}
+
+input UpdateUserInput {
+  """first name of the user"""
+  firstName: String
+
+  """last name of the user"""
+  lastName: String
+
+  """email of the user"""
+  email: String
+
+  """country code of the user"""
+  countryCode: String
+
+  """phone of the user"""
+  phone: String
+
+  """identity number of the user"""
+  identityNumber: String
+
+  """address number of the user"""
+  address: String
+
+  """country of the user"""
+  country: String
+
+  """line 2 of the user"""
+  line2: String
+
+  """city of the user"""
+  city: String
+
+  """province of the user"""
+  province: String
+
+  """postal code of the user"""
+  postalCode: String
+
+  """linkedin of the user"""
+  linkedin: String
+
+  """facebook of the user"""
+  facebook: String
+
+  """twitter of the user"""
+  twitter: String
+  _id: String!
+}
