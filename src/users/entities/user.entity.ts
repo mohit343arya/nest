@@ -1,7 +1,9 @@
 import { ObjectType, Field } from '@nestjs/graphql';
 import { Schema as MongooseSchema } from 'mongoose';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-@Schema()
+@Schema({
+  timestamps: true,
+})
 @ObjectType()
 export class User {
   @Field(() => String)
@@ -51,6 +53,12 @@ export class User {
   @Prop()
   @Field(() => String, { description: 'twitter of the user' })
   twitter: string;
+  @Prop()
+  @Field()
+  createdAt: Date;
+  @Prop()
+  @Field()
+  updatedAt: Date;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
